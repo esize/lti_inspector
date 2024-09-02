@@ -6,9 +6,9 @@ from collections import OrderedDict
 
 import lorem
 from django.conf import settings
-from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.templatetags.static import static
 from django.urls import reverse
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.views.decorators.csrf import csrf_exempt
