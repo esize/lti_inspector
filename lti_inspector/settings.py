@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'bu1s4+e_h!$!rsa(in18--y1uxupg(&2-=e$+
 DEBUG = os.environ.get('DEBUG', False)
 
 # ALLOWED_HOSTS = ['lti-inspector.herokuapp.com', 'localhost', 'lti-inspector.dev.tlt.harvard.edu']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', 'lti.app.wool.homes']
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'inspector',
-    'sslserver',
 ]
 
 MIDDLEWARE = [
