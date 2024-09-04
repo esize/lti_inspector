@@ -32,7 +32,6 @@ DEBUG = os.environ.get('DEBUG', False)
 
 # ALLOWED_HOSTS = ['lti-inspector.herokuapp.com', 'localhost', 'lti-inspector.dev.tlt.harvard.edu']
 ALLOWED_HOSTS = ['localhost', 'lti.app.wool.homes']
-CSRF_TRUSTED_ORIGINS = ['https://lti.app.wool.homes', 'https://canvas.wool.homes']
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -53,7 +52,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 ]
