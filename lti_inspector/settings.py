@@ -32,6 +32,7 @@ DEBUG = os.environ.get('DEBUG', False)
 
 # ALLOWED_HOSTS = ['lti-inspector.herokuapp.com', 'localhost', 'lti-inspector.dev.tlt.harvard.edu']
 ALLOWED_HOSTS = ['localhost', 'lti.app.wool.homes']
+CSRF_TRUSTED_ORIGINS = ['localhost', 'https://lti.app.wool.homes', 'https://canvas.wool.homes']
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
